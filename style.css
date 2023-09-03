@@ -88,6 +88,8 @@ main {
     top: -18px;
     left: 30px;
     transform: rotate(5deg);
+    width: 80px;
+    height: 80px;
 }
 
 main h1 {
