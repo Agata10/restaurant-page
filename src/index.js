@@ -5,7 +5,6 @@ import createMenuPage from "./menu.js";
 function createWebsite() {
     createHomepage();
     createHome();
-    //createMenuPage();
     handleClick();
 };
 
