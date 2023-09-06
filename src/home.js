@@ -1,25 +1,3 @@
-const createHeader = () => {
-
-    const headerElem = document.createElement('header');
-    const homeBtn = document.createElement('button');
-    const menuBtn = document.createElement('button');
-    const contactBtn = document.createElement('button');
-
-    homeBtn.classList.add('header-btn');
-    menuBtn.classList.add('header-btn');
-    contactBtn.classList.add('header-btn');
-
-    homeBtn.textContent = 'HOME';
-    menuBtn.textContent = 'MENU';
-    contactBtn.textContent = 'CONTACT';
-
-    headerElem.appendChild(homeBtn);
-    headerElem.appendChild(menuBtn);
-    headerElem.appendChild(contactBtn);
-
-    return headerElem;
-}
-
 const createSection1 = () => {
     const section1Elem = document.createElement('section');
     section1Elem.classList.add('logo');
@@ -60,29 +38,21 @@ const createSection3 = () => {
     return section3Elem; 
 }
 
-const createMain = () => {
-    const mainElem = document.createElement('main');
+const createHome = () => {
+    const homeDiv = document.querySelector('main');
+    homeDiv.classList.add('homeMain');
 
-    mainElem.appendChild(createSection1());
-    mainElem.appendChild(createSection2());
-    mainElem.appendChild(createSection3());
+    document.body.style.removeProperty('background');
+    document.body.style.backgroundImage = 'url(images/background.jpeg)';
 
-    return mainElem;
+    while(homeDiv.hasChildNodes()) {
+        homeDiv.removeChild(homeDiv.firstChild)
+        }
+
+    homeDiv.appendChild(createSection1());
+    homeDiv.appendChild(createSection2());
+    homeDiv.appendChild(createSection3());
+
 }
 
-const createFooter = () => {
-    const footer = document.createElement('footer');
-    footer.textContent = 'Copyright &copy Agata Deter 2023';
-
-    return footer;
-}
-
-function createHomepage() {
-    const divContent = document.getElementById('content');
-
-    divContent.appendChild(createHeader());
-    divContent.appendChild(createMain());
-    divContent.appendChild(createFooter());
-};
-
-export default createHomepage;
+export default createHome;

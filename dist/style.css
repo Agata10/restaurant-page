@@ -14,35 +14,20 @@
 body {
     margin: 0;
     padding: 0;
-    color: white;   
+    color: white; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    
 }
 
 #content {
-    position: relative;
     min-height: 100vh;
     width: 100%;
 
     display: flex;
     flex-direction: column;
-}
-
-#content:before {
-    content: "";
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: brightness(50%); 
-}
-
-header,
-.main,
-footer {
-    position: relative;
+    color: white; 
 }
 
 header {
@@ -68,13 +53,13 @@ header {
     cursor: pointer;
 }
 
-main {
+
+.homeMain {
    height: calc(100vh - 180px); 
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-
 }
 
 .logo {
@@ -92,18 +77,21 @@ main {
     height: 80px;
 }
 
-main h1 {
+.homeMain h1 {
     font-family: var(--font-header-btns);
     letter-spacing: 15px;
     font-size: 5rem;
     line-height: 0;
+    text-align: center;
 }
 
-main p {
+.homeMain p {
     font-family: var(--font-paragraph);
     font-size: 1rem;
     font-weight: 200;
+    text-align: center;
 }
+
 footer {
     display: flex;
     align-items: center;
@@ -111,6 +99,7 @@ footer {
 
     background: var(--color-header);
     margin-top: auto;
+    margin-bottom: 0;
     font-family: var(--font-paragraph);
     font-size: 0.9rem;
     font-weight: 200;
