@@ -9,16 +9,20 @@
     --color-btn: rgb(63, 69, 78, 0.6);
     --color-header: rgb(161, 157, 152, 0.12);
     --color-border: #CBCBC8;
+    --color-menu-header: rgb(161, 157, 152, 0.2);
+    --color-menu-item: rgb(63, 69, 78, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     color: white; 
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;  
-    
+    background-position: center;   
 }
 
 #content {
@@ -53,24 +57,27 @@ header {
     cursor: pointer;
 }
 
-
 .homeMain {
-   height: calc(100vh - 180px); 
+   height: calc(100vh - 140px); 
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   gap: 40px;
 }
 
 .logo {
     display: flex;
     font-family: var(--font-logo);
-    font-size: 1.5rem;
+}  
+
+.logo h3 {
+    font-size: 2rem;
 }
 
 .logo img {
     position: relative;
-    top: -18px;
+    top: -45px;
     left: 30px;
     transform: rotate(5deg);
     width: 80px;
@@ -90,6 +97,7 @@ header {
     font-size: 1rem;
     font-weight: 200;
     text-align: center;
+    padding-top: 15px;
 }
 
 footer {
@@ -104,4 +112,66 @@ footer {
     font-size: 0.9rem;
     font-weight: 200;
     padding: 10px;
+    height: 40px;
 }
+
+/* MENU PAGE */ 
+
+.menuMain {
+    max-height: 550px;
+    overflow: hidden;
+}
+
+ .scroll-menu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow: scroll;
+    margin: auto;
+    max-height: 100%;
+    width: 100%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+
+ .menu-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    height: 150px;
+    background-color: var(--color-menu-header);
+ }
+
+ .menuText {
+    font-size: 3rem;
+    width: 280px;
+    height: 70px;
+ }
+
+ .main-dishes-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+}
+.main-dishes-text {
+    background-color: var(--color-menu-item);
+    font-size: 1.8rem;
+    padding: 20px;
+}
+ .menu-item {
+    height: 400px;
+    width: 270px;
+    background-color: var(--color-menu-item);
+ }
+
+ .menu-item img {
+    width: 230px;
+    height: 150px;
+ }
