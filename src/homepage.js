@@ -1,4 +1,4 @@
-const createHeader = () => {
+function createHeader() {
 
     const headerElem = document.createElement('header');
     const homeBtn = document.createElement('button');
@@ -24,20 +24,20 @@ const createHeader = () => {
     return headerElem;
 }
 
-const createMain = () => {
+function createMain() {
     const main = document.createElement('main');
     main.classList.add('mainHomep')
     return main;
 }
 
-const createFooter = () => {
+function createFooter() {
     const footer = document.createElement('footer');
     footer.textContent = 'Copyright © Agata Deter 2023';
 
     return footer;
 }
 
-const createWebsite = () => {
+function createWebsite() {
     const divContent = document.getElementById('content');
 
     divContent.appendChild(createHeader());
