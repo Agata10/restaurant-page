@@ -160,7 +160,7 @@ footer {
     column-gap: 50px;
     row-gap: 30px;
 }
-.main-dishes-text {
+.menu-text {
     background-color: var(--color-menu-item);
     font-size: 1.8rem;
     padding: 20px;
