@@ -5,7 +5,7 @@ function createLogo() {
     headerDiv.classList.add("menu-header");
 
     const logoDiv = document.createElement('section');
-    logoDiv.classList.add("logo");
+    logoDiv.classList.add("logo-menu");
 
     const img = document.createElement('img');
     img.setAttribute('src', 'images/logo.png');
@@ -61,7 +61,7 @@ function createMainDishes() {
      'on top with whipping cream and strawberries.');
 
      const ratatoule = createItem('./images/ratatoulie.jpg',
-     'ratatoule',
+     'RATATOUILLE',
      '16$',
      'French toast with blueberry filling and white chocolate' +
      'on top with whipping cream and strawberries.');
@@ -96,7 +96,7 @@ function createDesserts() {
     dessertsDiv.classList.add('desserts-div');
 
     const creme = createItem('./images/creme.jpg',
-    'CREME BRULEE',
+    'CRÈME BRULÉE',
     '12$',
     'French toast with blueberry filling and white chocolate' +
     'on top with whipping cream and strawberries.');
@@ -118,13 +118,13 @@ function createCoffees() {
     coffeeDiv.classList.add('coffee-div');
 
     const latte = createItem('./images/latte.jpg',
-    'LATTE/CAPPUCIONO/MOCHA',
+    'LATTE',
     '7$',
     'French toast with blueberry filling and white chocolate' +
     'on top with whipping cream and strawberries.');
 
     const amerciano = createItem('./images/coffeejpg.jpg',
-    'ESPRESSO/AMERICANO',
+    'REGULAR',
     '5$',
     'French toast with blueberry filling and white chocolate' +
     'on top with whipping cream and strawberries.');
@@ -164,6 +164,15 @@ function createItem(image, name, price, description) {
    return divItem;
 }
 
+function setBtnActive() {
+    const homeBtn = document.getElementById('homeBtn');
+    const menuBtn = document.getElementById('menuBtn');
+    const cancelBtn = document.getElementById('contactBtn');
+    menuBtn.classList.add('active');
+    homeBtn.classList.remove('active');
+    cancelBtn.classList.remove('active');
+}
+
 function createMenuPage() {
     const homeDiv = document.querySelector('main');
     homeDiv.classList.add('menuMain');
@@ -181,7 +190,7 @@ function createMenuPage() {
     dessertsText.classList.add('menu-text');
 
     const coffeeText = document.createElement('div');
-    coffeeText.textContent = 'COFFEES';
+    coffeeText.textContent = 'CAFÉS';
     coffeeText.classList.add('menu-text');
 
     while(homeDiv.hasChildNodes()) {
@@ -196,6 +205,8 @@ function createMenuPage() {
     scrollMenuDiv.appendChild(coffeeText);
     scrollMenuDiv.appendChild(createCoffees());
     homeDiv.appendChild(scrollMenuDiv);
+
+    setBtnActive();
 };
 
 export default createMenuPage;

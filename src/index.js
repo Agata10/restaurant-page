@@ -11,7 +11,7 @@ function createWebsite() {
 function handleClick() {
 let menuClick = false;
 let homeClick = true;
- 
+
 const homeBtn = document.getElementById('homeBtn');
 const menuBtn = document.getElementById('menuBtn');
 

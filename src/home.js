@@ -1,3 +1,5 @@
+import { set } from "lodash";
+
 const createSection1 = () => {
     const section1Elem = document.createElement('section');
     section1Elem.classList.add('logo');
@@ -38,7 +40,16 @@ const createSection3 = () => {
     return section3Elem; 
 }
 
-const createHome = () => {
+function setBtnActive() {
+    const homeBtn = document.getElementById('homeBtn');
+    const menuBtn = document.getElementById('menuBtn');
+    const cancelBtn = document.getElementById('contactBtn');
+    homeBtn.classList.add('active');
+    menuBtn.classList.remove('active');
+    cancelBtn.classList.remove('active');
+}
+
+function createHome() {
     const homeDiv = document.querySelector('main');
     homeDiv.classList.add('homeMain');
 
@@ -53,6 +64,7 @@ const createHome = () => {
     homeDiv.appendChild(createSection2());
     homeDiv.appendChild(createSection3());
 
+    setBtnActive();
 }
 
 export default createHome;
