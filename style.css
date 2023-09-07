@@ -9,7 +9,7 @@
     --color-btn: rgb(63, 69, 78, 0.6);
     --color-header: rgb(161, 157, 152, 0.12);
     --color-border: #CBCBC8;
-    --color-menu-header: rgb(161, 157, 152, 0.2);
+    --color-menu-header: rgb(161, 157, 152, 0.15);
     --color-menu-item: rgb(63, 69, 78, 0.5);
 }
 
@@ -33,6 +33,8 @@ body {
     flex-direction: column;
     color: white; 
 }
+
+/* HEADER */
 
 header {
     background: var(--color-header);
@@ -65,6 +67,17 @@ header {
    justify-content: center;
    gap: 40px;
 }
+
+.header-btn:hover {
+    transform: scale(1.1);
+    border-bottom: 0.5px solid var(--color-border);
+}
+
+.active {
+    border-bottom: 0.5px solid var(--color-border);
+}
+
+/* HOME */ 
 
 .logo {
     display: flex;
@@ -100,6 +113,8 @@ header {
     padding-top: 15px;
 }
 
+/* FOOTER */
+
 footer {
     display: flex;
     align-items: center;
@@ -117,18 +132,12 @@ footer {
 
 /* MENU PAGE */ 
 
-.menuMain {
-    max-height: 550px;
-    overflow: hidden;
-}
-
  .scroll-menu-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     overflow: scroll;
-    margin: auto;
     max-height: 100%;
     width: 100%;
 
@@ -141,16 +150,30 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     width: 70%;
     height: 150px;
     background-color: var(--color-menu-header);
  }
 
+ .logo-menu img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: -40px;
+    top: 40px;
+    transform: rotate(5deg);
+ }
+
+ .logo-menu {
+    font-size: 1.5rem;
+    font-family: var(--font-logo);
+    position: unset;
+ }
+
  .menuText {
     font-size: 3rem;
-    width: 280px;
-    height: 70px;
+    font-family: var(--font-header-btns);
+    padding-bottom: 40px;
  }
 
  .main-dishes-div {
@@ -160,18 +183,47 @@ footer {
     column-gap: 50px;
     row-gap: 30px;
 }
+
+.desserts-div,
+.coffee-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
 .menu-text {
     background-color: var(--color-menu-item);
     font-size: 1.8rem;
     padding: 20px;
 }
+
  .menu-item {
-    height: 400px;
+    height: 350px;
     width: 270px;
     background-color: var(--color-menu-item);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr, 1fr, 2fr;
  }
 
  .menu-item img {
     width: 230px;
     height: 150px;
+    margin: 20px auto;
+ }
+
+ .menu-item p {
+    text-align: left;
+    margin: 20px;
+    margin-top: 0px;
+ }
+
+ .name-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 0px;
  }
