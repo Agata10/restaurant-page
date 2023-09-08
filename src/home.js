@@ -1,5 +1,3 @@
-import { set } from "lodash";
-
 const createSection1 = () => {
     const section1Elem = document.createElement('section');
     section1Elem.classList.add('logo');
@@ -43,15 +41,26 @@ const createSection3 = () => {
 function setBtnActive() {
     const homeBtn = document.getElementById('homeBtn');
     const menuBtn = document.getElementById('menuBtn');
-    const cancelBtn = document.getElementById('contactBtn');
+    const contactBtn = document.getElementById('contactBtn');
     homeBtn.classList.add('active');
     menuBtn.classList.remove('active');
-    cancelBtn.classList.remove('active');
+    contactBtn.classList.remove('active');
 }
 
-function createHome() {
+function createHomeDiv() {
+
+    const div = document.createElement('div');
+    div.classList.add('home-div');
+
+    div.appendChild(createSection1());
+    div.appendChild(createSection2());
+    div.appendChild(createSection3());
+
+    return div;
+}
+
+function createHomepage() {
     const homeDiv = document.querySelector('main');
-    homeDiv.classList.add('homeMain');
 
     document.body.style.removeProperty('background');
     document.body.style.backgroundImage = 'url(images/background.jpeg)';
@@ -60,11 +69,9 @@ function createHome() {
         homeDiv.removeChild(homeDiv.firstChild)
         }
 
-    homeDiv.appendChild(createSection1());
-    homeDiv.appendChild(createSection2());
-    homeDiv.appendChild(createSection3());
+    homeDiv.appendChild(createHomeDiv());
 
     setBtnActive();
 }
 
-export default createHome;
+export default createHomepage;

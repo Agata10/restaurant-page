@@ -26,7 +26,7 @@ function createHeader() {
 
 function createMain() {
     const main = document.createElement('main');
-    main.classList.add('mainHomep')
+   
     return main;
 }
 
