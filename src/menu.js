@@ -41,43 +41,43 @@ function createMainDishes() {
         createItem(
             'CREPES',
             '14$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Pick filing from strawberry cheesecake or banana creme.'));
 
     mainDishesDiv.appendChild(
         createItem(
             'CROISSANT',
             '10$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Fresh mozzarella, basil and ham on top with egg.'));
 
     mainDishesDiv.appendChild(
         createItem(
             'BAQUETTE',
             '13$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Turkey/meatball with fresh tomato, cucubmer and basil.'));
 
     mainDishesDiv.appendChild(
         createItem(
             'SALAD',
             '14$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Salmon/Chicken, avocado, cucumber, macadamia nuts and dressing of your choice.'));
 
     mainDishesDiv.appendChild(
         createItem(
             'RATATOUILLE',
             '16$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Zuccini, tomato, cucumber, onion, with garlic-butter drizzle.'));
 
     mainDishesDiv.appendChild(
         createItem(
             'STEAK',
             '22$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Steak fried with herbs and served with side of crispy fries.'));
 
     mainDishesDiv.appendChild(
         createItem(
             'GOULASH',
             '18$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Spicy goulash, served with tomato sausce, meatballs, potatoes.'));
 
 
     const duration = performance.now() - startTime;
@@ -95,13 +95,13 @@ function createDesserts() {
         createItem(
             'CRÈME',
             '12$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Traditional creme brulee served with side of vanilla or chocolate ice cream.'));
 
     dessertsDiv.appendChild(
         createItem(
             'MACARONS',
             '13$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Taste our fresh, daily baked macarons, serving of 5 different flavors.'));
 
     return dessertsDiv;
 }
@@ -114,13 +114,13 @@ function createCoffees() {
         createItem(
             'LATTE',
             '7$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Latte/ Mocha/ Cappucino.'));
 
     coffeeDiv.appendChild(
         createItem(
             'REGULAR',
             '5$',
-            'White chocolate and blueberry filling, whipping cream on top with strawberries.'));
+            'Espresso, Americano, or regular coffee with milk.'));
 
     return coffeeDiv;
 }

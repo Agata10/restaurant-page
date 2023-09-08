@@ -227,8 +227,7 @@ footer {
  .name-item {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    margin-top: 0px;
+    margin: 0px 20px;
  }
 
  /* CONTACT PAGE */
@@ -305,6 +304,10 @@ footer {
 
     main h1 {
         letter-spacing: 1px;
+    }
+
+    .header-btn {
+        font-size: 1.5rem !important;
     }
 
     .right-div-contact h1 {
