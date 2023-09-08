@@ -20,10 +20,10 @@ The main task was practicing modules in JS(ES6), Webpack and DOM manipulation.
 * JavaScript
 
 ## Screenshots
-![Wepage](./screenshot/screen.png)
+![Wepage](./images/screen.png)
 
 ## Link to game
-https://agata10.github.io/TicTacToe/
+https://agata10.github.io/restaurant-page/
 
 ## Setup
 
@@ -32,8 +32,14 @@ https://agata10.github.io/TicTacToe/
 2. Clone reposiory
    `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
+3. Install npm install webpack webpack-cli --save-dev
+
 ## Usage
 
 The website is simple, it has home site with tabbed browsing for menu and contact.
+
+Each webpage is seperated in module and appears its content to main element.
+
+The website is responive for phones.
 
 
