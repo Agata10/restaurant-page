@@ -25,7 +25,7 @@ body {
 }
 
 #content {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
 
     display: flex;
@@ -284,3 +284,55 @@ footer {
     align-content: flex-start;
 }
 
+@media (max-width: 700px) { 
+    .main-dishes-div {
+        grid-template-columns: 1fr;
+    }
+
+    .desserts-div {
+        grid-template-columns: 1fr;
+    }
+
+    .coffee-div {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) { 
+    html {
+        font-size: 60%;
+    }
+
+    main h1 {
+        letter-spacing: 1px;
+    }
+
+    .right-div-contact h1 {
+        letter-spacing: 0px;
+    }
+
+    .main-dishes-div {
+        grid-template-columns: 1fr;
+    }
+
+    .desserts-div {
+        grid-template-columns: 1fr;
+    }
+
+    .coffee-div {
+        grid-template-columns: 1fr;
+    }
+
+   .name-item {
+        margin: 0 20px;
+   }
+
+   .menu-item img {
+        margin-bottom: 0px;
+   }
+
+   .menu-item {
+    height: 300px;
+   }
+    
+}
