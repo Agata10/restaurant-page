@@ -7,6 +7,7 @@
 * [Link to game](#link-to-game)
 * [Setup](#setup)
 * [Usage](#usage)
+* [Authors of pictures](#authors-of-pictures)
 
 
 ## General information
@@ -41,5 +42,26 @@ The website is simple, it has home site with tabbed browsing for menu and contac
 Each webpage is seperated in module and appears its content to main element.
 
 The website is responive for phones.
+
+## Authors of pictures
+
+Unsplah:
+Mae Mu - home page crossiant
+Alisa Anton - crepes
+Omar Ai-Ghosson - french toast
+Emy - goulash
+Alexandru-Bogdan Ghita - steak
+Tom Morel - salad
+Raphael maksian - creme brulee
+Serge savchiuc - macarons
+Isaac Quesada - cafe latte
+Jason Wong - regular coffee
+Massimo Adami - contact page macarons
+
+Freepik:
+topntp26 - filled crossiant
+Timolin - ciabata
+user14908974 - ratatouille
+
 
 
