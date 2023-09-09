@@ -21,7 +21,7 @@ The main task was practicing modules in JS(ES6), Webpack and DOM manipulation.
 * JavaScript
 
 ## Screenshots
-![Wepage](./images/screen.png)
+![Wepage](./images/menu/screen.png)
 
 ## Link to game
 https://agata10.github.io/restaurant-page/
